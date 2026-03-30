@@ -13,6 +13,21 @@ public class Dog extends Animal{
     }
 }
 
+interface vehicle{
+
+    void move();
+
+}
+
+public class car implements vehicle{
+    void honk(){
+        System.out.println("honk honk!!");
+
+    }
+
+
+}
+
 
 public class inheritence {
 
@@ -21,6 +36,10 @@ public class inheritence {
         Animal myAnimal = new Dog();
 
         myAnimal.makeSound();
+
+        car myVehicle = new car();
+
+        myVehicle.honk();
 
     }
 
