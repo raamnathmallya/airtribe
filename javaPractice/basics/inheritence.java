@@ -1,46 +1,52 @@
-public class Animal {
+// --- Class Inheritance ---
 
-    public void makeSound(){
+class Animal {
+
+    public void makeSound() {
         System.out.println("Animal makes a sound");
     }
-    
 }
 
-public class Dog extends Animal{
+class Dog extends Animal {
 
-    public void makeSound(){
+    @Override
+    public void makeSound() {
         System.out.println("Dog barks");
     }
 }
 
-interface vehicle{
+// --- Interface Implementation ---
+
+interface Vehicle {
 
     void move();
-
 }
 
-public class car implements vehicle{
-    void honk(){
-        System.out.println("honk honk!!");
+class Car implements Vehicle {
 
+    @Override
+    public void move() {
+        System.out.println("Car moves");
     }
 
-
+    void honk() {
+        System.out.println("honk honk!!");
+    }
 }
 
+// --- Main ---
 
 public class inheritence {
 
-    public static void main (String [] args){
+    public static void main(String[] args) {
 
+        // Polymorphism via class inheritance
         Animal myAnimal = new Dog();
-
         myAnimal.makeSound();
 
-        car myVehicle = new car();
-
+        // Interface implementation
+        Car myVehicle = new Car();
+        myVehicle.move();
         myVehicle.honk();
-
     }
-
 }
