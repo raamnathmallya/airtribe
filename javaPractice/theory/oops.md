@@ -13,6 +13,8 @@
 - reduce code complexity
 
 - How: Classes (blueprint) and Objects (instance of a class containing data and methods)
+- constructors are used to create or initialize the objects
+- 
 
 
 data = attributes
@@ -32,6 +34,60 @@ methods = functions
 
 
 Abstraction: Focuses on what it does than how it does like dashboard.
-  - Abstract class = template (all vehicles can move, but doesn't define how they move)
+  - Abstract class = template only cannot objectify (all vehicles can move, but doesn't define how they move)
   - interface = contract for implementing all its methods.
+  - diamond problem - concrete class can extend only one class
+
+Encapsulation: protects the items inside the class
+- require methods to interact with objects (getter setter)
+- creating a class definition itself implements encapsulation
+
+Inheritance: process of extending one class to acquire properties and behaviour in another class
+- this , super keyword is used to access
+
+Polymorphism: object behave differently based on context
+- Compile time polymorphism: method overloading: many methods with same name diff arguments.
+  - binding happens during compile time
+- run time polymorphism: method overriding: redefining the parent method in subclass.
+  - creating object of subclass type will call the method of same name in subclass.
+
+
+
+
+# control flow statements
+
+- decision making 
+- - if
+- - if else 
+- - switch 
+- Loops
+- - for
+- - while 
+- - do while
+
+
+## Access modifiers
+- public: can access from anywhere, called outside the class
+
+
+## Other keywords
+- Class: used to declare a class, starts with uppercase, same filename.
+- static: belongs to class itself and need not objectify the class to call this
+- void: doesn't return any value.
+- main: spl method, where java prog starts
+- String[] args: array of string objects used to pass commandline arguments to program. even without any arguments array is still created and passed.
+
+
+
+## Datatypes
+- int: 12 54
+- double: 45.67   67.232
+- char: F D
+- boolean: true false
+
+
+
+
+
+
 
